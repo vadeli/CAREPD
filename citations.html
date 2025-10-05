@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Original Dataset Citations - Care-PD</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <style>
+    .carepd {
+      font-variant-caps: small-caps;
+      font-weight: 700 !important;
+      letter-spacing: 0.02em;
+    }
+    .cohort-name {
+      color: #3273dc;
+      font-weight: 600;
+      font-size: 1.2em;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+    pre {
+      background-color: #f5f5f5;
+      padding: 1em;
+      border-radius: 4px;
+      font-size: 0.9em;
+      overflow-x: auto;
+      margin-top: 1em;
+    }
+    .citation-entry {
+      margin-bottom: 2.5em;
+    }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1" style="font-size: 3rem; margin-bottom: 0em;">
+            CARE-PD Dataset Citations
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop content">
+
+      <div class="box" style="background-color: #e8f4fd; border-left: 4px solid #3273dc; padding: 2em; margin-top: 1em;">
+        <h3 class="title is-4" style="margin-bottom: 1em;">📋 Citation Guidelines</h3>
+        <ul style="font-size: 1.1em; line-height: 1.6;">
+          <li style="margin-bottom: 0.1em;">
+            <strong>Always cite the main CARE-PD paper</strong> when using any part of the dataset
+          </li>
+          <li style="margin-bottom: 0.1em;">
+            <strong>Cite the relevant cohort papers</strong> for the specific data you use in your research
+          </li>
+        </ul>
+      </div>
+
+      <!-- Original Care-PD Citation -->
+             <div class="citation-entry">
+        <h3 class="cohort-name">CARE-PD</h3>
+        <p style="margin-bottom: 1em;">
+          Adeli V, Klabučar I, Rajabi J, Filtjens B, Mehraban S, Wang D, Seo H, Hoang T-H, Do MN, Muller C, Neves de Oliveira C, Boari Coelho D, Ginis P, Gilat M, Nieuwboer A, Spildooren J, McKay JL, Kwon H, Clifford G, Esper CD, Factor SA, Genias I, Dadashzadeh A, Shum L, Whone A, Mirmehdi M, Iaboni A, Taati B.
+CARE-PD: A Multi-Site Anonymized Clinical Dataset for Parkinson’s Disease Gait Assessment.
+In: Advances in Neural Information Processing Systems (NeurIPS); 2025.
+        </p>
+        <details>
+          <summary style="cursor: pointer; color: #3273dc; font-weight: 500;">BibTeX Citation</summary>
+          <pre>@inproceedings{adeli2025carepd,
+title={CARE-PD: A Multi-Site Anonymized Clinical Dataset for Parkinson’s Disease Gait Assessment},
+author={Vida Adeli, Ivan Klabu\v{c}ar, Javad Rajabi, Benjamin Filtjens, Soroush Mehraban, Diwei Wang, Hyewon Seo, Trung-Hieu Hoang, Minh N. Do, Candice Muller, Claudia Neves de Oliveira, Daniel Boari Coelho, Pieter Ginis, Moran Gilat, Alice Nieuwboer, Joke Spildooren, J. Lucas McKay, Hyeokhyen Kwon, Gari Clifford, Christine D. Esper, Stewart A. Factor, Imari Genias, Amirhossein Dadashzadeh, Leia Shum, Alan Whone, Majid Mirmehdi, Andrea Iaboni, Babak Taati},
+booktitle={NeurIPS},
+year={2025}
+}</pre>
+        </details>
+      </div>
+
+      <!-- PD-GaM -->
+        <div class="citation-entry">
+        <h3 class="cohort-name">PD-GaM</h3>
+        <p style="margin-bottom: 1em;">
+          Vida Adeli, Soroush Mehraban, Majid Mirmehdi, Alan Whone, Benjamin Filtjens, Amirhossein Dadashzadeh, Alfonso Fasano, and Andrea Iaboni, Babak Taati. GAITGen: Disentangled motion-pathology impaired gait generative model—bringing motion generation to the clinical domain. arXiv preprint arXiv:2503.22397, 2025.
+        </p>
+        <details>
+          <summary style="cursor: pointer; color: #3273dc; font-weight: 500;">BibTeX Citation</summary>
+          <pre>@article{adeli2025gaitgen,
+  title={GAITGen: Disentangled motion-pathology impaired gait generative model—bringing motion generation to the clinical domain},
+  author={Adeli, Vida and Mehraban, Soroush and Mirmehdi, Majid and Whone, Alan and Filtjens, Benjamin and Dadashzadeh, Amirhossein and Fasano, Alfonso and Iaboni, Andrea and Taati, Babak},
+  journal={arXiv preprint arXiv:2503.22397},
+  year={2025}
+}</pre>
+        </details>
+      </div>
+
+
+      <!-- <div class="citation-entry">
+        <h3 class="cohort-name">PD-GaM</h3>
+        <ul style="margin-bottom: 1em;">
+          <li style="margin-bottom: 0.8em;">Amirhossein Dadashzadeh, Shuchao Duan, Alan Whone, and Majid Mirmehdi. PeCop: Parameter efficient continual pretraining for action quality assessment. In Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision, 42–52, 2024.</li>
+          <li style="margin-bottom: 0.8em;">Vida Adeli, Soroush Mehraban, Majid Mirmehdi, Alan Whone, Benjamin Filtjens, Amirhossein Dadashzadeh, Alfonso Fasano, and Andrea Iaboni, Babak Taati. GAITGen: Disentangled motion-pathology impaired gait generative model—bringing motion generation to the clinical domain. arXiv preprint arXiv:2503.22397, 2025.</li>
+        </ul>
+        <details>
+          <summary style="cursor: pointer; color: #3273dc; font-weight: 500;">BibTeX Citations</summary>
+          <pre>@inproceedings{dadashzadeh2024pecop,
+  title={PeCop: Parameter efficient continual pretraining for action quality assessment},
+  author={Dadashzadeh, Amirhossein and Duan, Shuchao and Whone, Alan and Mirmehdi, Majid},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={42--52},
+  year={2024}
+}
+
+@article{adeli2025gaitgen,
+  title={GAITGen: Disentangled motion-pathology impaired gait generative model—bringing motion generation to the clinical domain},
+  author={Adeli, Vida and Mehraban, Soroush and Mirmehdi, Majid and Whone, Alan and Filtjens, Benjamin and Dadashzadeh, Amirhossein and Fasano, Alfonso and Iaboni, Andrea and Taati, Babak},
+  journal={arXiv preprint arXiv:2503.22397},
+  year={2025}
+}</pre>
+        </details>
+      </div> -->
+ 
+      <!-- 3DGait -->
+      <div class="citation-entry">
+        <h3 class="cohort-name">3DGait</h3>
+        <p style="margin-bottom: 1em;">
+          Diwei Wang, Chaima Zouaoui, Jinhyeok Jang, Hassen Drira, and Hyewon Seo. 2023. Video-Based Gait Analysis for Assessing Alzheimer's Disease and Dementia with Lewy Bodies. In Applications of Medical Artificial Intelligence: Second International Workshop, AMAI 2023, Held in Conjunction with MICCAI 2023, Vancouver, BC, Canada, October 8, 2023, Proceedings. Springer-Verlag, Berlin, Heidelberg, 72–82. https://doi.org/10.1007/978-3-031-47076-9_8
+        </p>
+        <details>
+          <summary style="cursor: pointer; color: #3273dc; font-weight: 500;">BibTeX Citation</summary>
+          <pre>@inproceedings{wang2023video,
+  title={Video-Based Gait Analysis for Assessing Alzheimer's Disease and Dementia with Lewy Bodies},
+  author={Wang, Diwei and Zouaoui, Chaima and Jang, Jinhyeok and Drira, Hassen and Seo, Hyewon},
+  booktitle={Applications of Medical Artificial Intelligence: Second International Workshop, AMAI 2023, Held in Conjunction with MICCAI 2023, Vancouver, BC, Canada, October 8, 2023, Proceedings},
+  pages={72--82},
+  year={2023},
+  publisher={Springer-Verlag},
+  address={Berlin, Heidelberg},
+  doi={10.1007/978-3-031-47076-9_8}
+}</pre>
+        </details>
+      </div>
+
+      <!-- BMCLab -->
+      <div class="citation-entry">
+        <h3 class="cohort-name">BMCLab</h3>
+        <p style="margin-bottom: 1em;">
+          Shida TKF, Costa TM, de Oliveira CEN, de Castro Treza R, Hondo SM, Los Angeles E, Bernardo C, Dos Santos de Oliveira L, de Jesus Carvalho M, Coelho DB. A public data set of walking full-body kinematics and kinetics in individuals with Parkinson's disease. Front Neurosci. 2023 Feb 16;17:992585. doi: 10.3389/fnins.2023.992585. PMID: 36875659; PMCID: PMC9978741.
+        </p>
+        <details>
+          <summary style="cursor: pointer; color: #3273dc; font-weight: 500;">BibTeX Citation</summary>
+          <pre>@article{shida2023public,
+  title={A public data set of walking full-body kinematics and kinetics in individuals with Parkinson's disease},
+  author={Shida, TKF and Costa, TM and de Oliveira, CEN and de Castro Treza, R and Hondo, SM and Los Angeles, E and Bernardo, C and Dos Santos de Oliveira, L and de Jesus Carvalho, M and Coelho, DB},
+  journal={Frontiers in Neuroscience},
+  volume={17},
+  pages={992585},
+  year={2023},
+  publisher={Frontiers Media SA},
+  doi={10.3389/fnins.2023.992585},
+  pmid={36875659},
+  pmcid={PMC9978741}
+}</pre>
+        </details>
+      </div>
+
+      <!-- DNE -->
+      <div class="citation-entry">
+        <h3 class="cohort-name">DNE</h3>
+        <ul style="margin-bottom: 1em;">
+          <li style="margin-bottom: 0.8em;">Hoang TH, Zallek C, Do MN. Smartphone-Based Digitized Neurological Examination Toolbox for Multi-test Neurological Abnormality Detection and Documentation. IEEE J Biomed Health Inform. 2024 Aug 26;PP. doi: 10.1109/JBHI.2024.3439492. Epub ahead of print. PMID: 39186431.</li>
+          <li style="margin-bottom: 0.8em;">Hoang TH, Zehni M, Xu H, Heintz G, Zallek C, Do MN. Towards a Comprehensive Solution for a Vision-Based Digitized Neurological Examination. IEEE J Biomed Health Inform. 2022 Aug 26(8):4020-4031. doi: 10.1109/JBHI.2022.3167927. Epub 2022 Aug 11. PMID: 35439148; PMCID: PMC9707344.</li>
+        </ul>
+        <details>
+          <summary style="cursor: pointer; color: #3273dc; font-weight: 500;">BibTeX Citations</summary>
+          <pre>@article{hoang2024smartphone,
+  title={Smartphone-Based Digitized Neurological Examination Toolbox for Multi-test Neurological Abnormality Detection and Documentation},
+  author={Hoang, TH and Zallek, C and Do, MN},
+  journal={IEEE Journal of Biomedical and Health Informatics},
+  year={2024},
+  publisher={IEEE},
+  doi={10.1109/JBHI.2024.3439492},
+  pmid={39186431},
+  note={Epub ahead of print}
+}
+
+@article{hoang2022towards,
+  title={Towards a Comprehensive Solution for a Vision-Based Digitized Neurological Examination},
+  author={Hoang, TH and Zehni, M and Xu, H and Heintz, G and Zallek, C and Do, MN},
+  journal={IEEE Journal of Biomedical and Health Informatics},
+  volume={26},
+  number={8},
+  pages={4020--4031},
+  year={2022},
+  publisher={IEEE},
+  doi={10.1109/JBHI.2022.3167927},
+  pmid={35439148},
+  pmcid={PMC9707344}
+}</pre>
+        </details>
+      </div>
+
+      <!-- E-LC -->
+      <div class="citation-entry">
+        <h3 class="cohort-name">E-LC</h3>
+        <ul style="margin-bottom: 1em;">
+          <li style="margin-bottom: 0.8em;">Lucas McKay J, Goldstein FC, Sommerfeld B, Bernhard D, Perez Parra S, Factor SA. Freezing of Gait can persist after an acute levodopa challenge in Parkinson's disease. NPJ Parkinsons Dis. 2019 Nov 22;5:25. doi: 10.1038/s41531-019-0099-z. PMID: 31799377; PMCID: PMC6874572.</li>
+          <li style="margin-bottom: 0.8em;">Kwon H, Clifford GD, Genias I, Bernhard D, Esper CD, Factor SA, McKay JL. An Explainable Spatial-Temporal Graphical Convolutional Network to Score Freezing of Gait in Parkinsonian Patients. Sensors (Basel). 2023 Feb 4;23(4):1766. doi: 10.3390/s23041766. PMID: 36850363; PMCID: PMC9968199.</li>
+        </ul>
+        <details>
+          <summary style="cursor: pointer; color: #3273dc; font-weight: 500;">BibTeX Citations</summary>
+          <pre>@article{mckay2019freezing,
+  title={Freezing of Gait can persist after an acute levodopa challenge in Parkinson's disease},
+  author={McKay, J Lucas and Goldstein, FC and Sommerfeld, B and Bernhard, D and Perez Parra, S and Factor, SA},
+  journal={NPJ Parkinson's Disease},
+  volume={5},
+  number={1},
+  pages={25},
+  year={2019},
+  publisher={Nature Publishing Group},
+  doi={10.1038/s41531-019-0099-z},
+  pmid={31799377},
+  pmcid={PMC6874572}
+}
+
+@article{kwon2023explainable,
+  title={An Explainable Spatial-Temporal Graphical Convolutional Network to Score Freezing of Gait in Parkinsonian Patients},
+  author={Kwon, H and Clifford, GD and Genias, I and Bernhard, D and Esper, CD and Factor, SA and McKay, JL},
+  journal={Sensors},
+  volume={23},
+  number={4},
+  pages={1766},
+  year={2023},
+  publisher={MDPI},
+  doi={10.3390/s23041766},
+  pmid={36850363},
+  pmcid={PMC9968199}
+}</pre>
+        </details>
+      </div>
+
+      <!-- KUL-DT-T -->
+      <div class="citation-entry">
+        <h3 class="cohort-name">KUL-DT-T</h3>
+        <ul style="margin-bottom: 1em;">
+          <li style="margin-bottom: 0.8em;">Spildooren J, Vercruysse S, Desloovere K, Vandenberghe W, Kerckhofs E, Nieuwboer A. Freezing of gait in Parkinson's disease: the impact of dual-tasking and turning. Mov Disord. 2010 Nov 15;25(15):2563–70. doi: 10.1002/mds.23327. PMID: 20632376.</li>
+          <li style="margin-bottom: 0.8em;">Filtjens B, Ginis P, Nieuwboer A, Slaets P, Vanrumste B. Automated freezing of gait assessment with marker-based motion capture and multi-stage spatial-temporal graph convolutional neural networks. J Neuroeng Rehabil. 2022 May 21;19(1):48. doi: 10.1186/s12984-022-01025-3. PMID: 35597950; PMCID: PMC9124420.</li>
+        </ul>
+        <details>
+          <summary style="cursor: pointer; color: #3273dc; font-weight: 500;">BibTeX Citations</summary>
+          <pre>@article{spildooren2010freezing,
+  title={Freezing of gait in Parkinson's disease: the impact of dual-tasking and turning},
+  author={Spildooren, J and Vercruysse, S and Desloovere, K and Vandenberghe, W and Kerckhofs, E and Nieuwboer, A},
+  journal={Movement Disorders},
+  volume={25},
+  number={15},
+  pages={2563--2570},
+  year={2010},
+  publisher={Wiley Online Library},
+  doi={10.1002/mds.23327},
+  pmid={20632376}
+}
+
+@article{filtjens2022automated,
+  title={Automated freezing of gait assessment with marker-based motion capture and multi-stage spatial-temporal graph convolutional neural networks},
+  author={Filtjens, B and Ginis, P and Nieuwboer, A and Slaets, P and Vanrumste, B},
+  journal={Journal of NeuroEngineering and Rehabilitation},
+  volume={19},
+  number={1},
+  pages={48},
+  year={2022},
+  publisher={BioMed Central},
+  doi={10.1186/s12984-022-01025-3},
+  pmid={35597950},
+  pmcid={PMC9124420}
+}</pre>
+        </details>
+      </div>
+
+      
+
+    <!-- T-SDU, T-SDU-PD, T-LTC -->
+      <div class="citation-entry">
+        <h3 class="cohort-name">T-SDU, T-SDU-PD, T-LTC</h3>
+        <p style="margin-bottom: 1em;">
+          Adeli V, Klabučar I, Rajabi J, Filtjens B, Mehraban S, Wang D, Seo H, Hoang T-H, Do MN, Muller C, Neves de Oliveira C, Boari Coelho D, Ginis P, Gilat M, Nieuwboer A, Spildooren J, McKay JL, Kwon H, Clifford G, Esper CD, Factor SA, Genias I, Dadashzadeh A, Shum L, Whone A, Mirmehdi M, Iaboni A, Taati B.
+CARE-PD: A Multi-Site Anonymized Clinical Dataset for Parkinson’s Disease Gait Assessment.
+In: Advances in Neural Information Processing Systems (NeurIPS); 2025.
+        </p>
+        <details>
+          <summary style="cursor: pointer; color: #3273dc; font-weight: 500;">BibTeX Citation</summary>
+          <pre>@inproceedings{adeli2025carepd,
+title={CARE-PD: A Multi-Site Anonymized Clinical Dataset for Parkinson’s Disease Gait Assessment},
+author={Vida Adeli, Ivan Klabu\v{c}ar, Javad Rajabi, Benjamin Filtjens, Soroush Mehraban, Diwei Wang, Hyewon Seo, Trung-Hieu Hoang, Minh N. Do, Candice Muller, Claudia Neves de Oliveira, Daniel Boari Coelho, Pieter Ginis, Moran Gilat, Alice Nieuwboer, Joke Spildooren, J. Lucas McKay, Hyeokhyen Kwon, Gari Clifford, Christine D. Esper, Stewart A. Factor, Imari Genias, Amirhossein Dadashzadeh, Leia Shum, Alan Whone, Majid Mirmehdi, Andrea Iaboni, Babak Taati},
+booktitle={NeurIPS},
+year={2025}
+}</pre>
+        </details>
+      </div>
+
+
+      <div class="has-text-centered" style="margin-top: 3em;">
+        <a href="index.html" class="button is-primary is-large">
+          ← Back to CARE-PD Dataset
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .title.publication-title.carepd{
+    font-family: "Libre Baskerville", serif !important;
+    font-variant-caps: small-caps;
+    font-size: 12px;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em;
+  }
+    .carepd {
+    font-variant-caps: small-caps;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em;
+  }
+    .carepd span {
+      font-variant: normal; /* keep STYLE in normal uppercase */
+    }
+  </style>
+
+  <title>Care-PD</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title carepd" style="font-size: 4.5rem; margin-top: 0.2em;">
+            Care-PD
+          </h1>
+          <h2 class="title is-3 publication-title">A Multi-Site Anonymized Clinical Dataset for Parkinson’s Disease Gait Assessment</h2>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block" style="margin-right: 0.5em; margin-top: 1em;">
+              <a href="https://vadeli.github.io/">Vida Adeli*</a><sup>1,2,3</sup>,</span>
+            <span class="author-block">
+              <a href="">Ivan Klabučar</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.cs.toronto.edu/~rajabi/">Javad Rajabi</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=uL44AIYAAAAJ&hl=en">Benjamin Filtjens</a><sup>2,3</sup>,</span>
+            <span class="author-block">
+              <a href="https://SoroushMehraban.github.io/">Soroush Mehraban</a><sup>1,2,3</sup>,</span>
+            <span class="author-block">
+              <a href="">Diwei Wang</a><sup>4</sup>,</span>
+            <span class="author-block">
+              <a href="https://seo-cnrs.github.io/">Hyewon Seo</a><sup>4</sup>,</span>
+            <span class="author-block">
+              <a href="https://hthieu.web.illinois.edu/">Trung-Hieu Hoang</a><sup>6</sup>,</span>
+            <span class="author-block">
+              <a href="https://minhdo.ece.illinois.edu/">Minh N. Do</a><sup>6</sup>,</span>
+            <span class="author-block">
+              <a href="">Candice Muller</a><sup>5</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=JyvzdREAAAAJ&hl=pt-BR">Claudia Oliveira</a><sup>7</sup>,</span>
+            <span class="author-block">
+              <a href="https://bmclab.pesquisa.ufabc.edu.br/people/daniel/">Daniel Boari Coelho</a><sup>7</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.kuleuven.be/wieiswie/en/person/00072396">Pieter Ginis</a><sup>8</sup>,</span>
+            <span class="author-block">
+              <a href="https://gbiomed.kuleuven.be/english/research/50000743/research/research-units/enrgy/principal-investigators-enrgy/00120552">Moran Gilat</a><sup>8</sup>,</span>
+            <span class="author-block">
+              <a href="https://gbiomed.kuleuven.be/english/research/50000743/research/research-units/enrgy/principal-investigators-enrgy/00014581">Alice Nieuwboer</a><sup>8</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=9YSiNqMAAAAJ&hl=nl">Joke Spildooren</a><sup>9</sup>,</span>
+            <span class="author-block">
+              <a href="https://jlucasmckay.bmi.emory.edu/global/cv/">Lucas Mckay</a><sup>10</sup>,</span>
+            <span class="author-block">
+              <a href="https://med.emory.edu/directory/profile/?u=HHYEOKK">Hyeokhyen Kwon</a><sup>10</sup>,</span>
+            <span class="author-block">
+              <a href="https://med.emory.edu/directory/profile/?u=GDCLIFF">Gari Clifford</a><sup>10</sup>,</span>
+            <span class="author-block">
+              <a href="https://med.emory.edu/directory/profile/?u=CEDOSS">Christine Esper</a><sup>10</sup>,</span>
+            <span class="author-block">
+              <a href="https://med.emory.edu/directory/profile/?u=SFACTOR">Stewart Factor</a><sup>10</sup>,</span>
+            <span class="author-block">
+              <a href="">Imari Genias</a><sup>10</sup>,</span>
+            <span class="author-block">
+              <a href="https://plrbear.github.io/">Amirhossein Dadashzadeh</a><sup>11</sup>,</span>
+            <span class="author-block">
+              <a href="https://rreach.mech.ubc.ca/people/researchers/leia-shum/">Leia Shum</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.bristol.ac.uk/people/person/Alan-Whone-7dc718f0-295f-4dea-8fe9-bc26c12b9ea1/">Alan Whone</a><sup>11</sup>,</span>
+            <span class="author-block">
+              <a href="https://majidmirmehdi.github.io/">Majid Mirmehdi</a><sup>11</sup>,</span>
+            <span class="author-block">
+              <a href="https://psychiatry.utoronto.ca/faculty/andrea-iaboni">Andrea Iaboni</a><sup>1,3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.toronto.edu/~taati/">Babak Taati*</a><sup>1,2,3</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="margin-right: 1em; margin-top: 1em;"><sup>1</sup>University of Toronto</span>
+            <span class="author-block" style="margin-right: 1em;"><sup>2</sup>Vector Institute</span>
+            <span class="author-block" style="margin-right: 1em;"><sup>3</sup>KITE Research Institute-UHN</span><br>
+            <span class="author-block" style="margin-right: 0.5em;"><sup>4</sup>University of Strasbourg</span>
+            <span class="author-block" style="margin-right: 0.5em;"><sup>5</sup>University Hospitals of Strasbourg</span>
+            <span class="author-block" style="margin-right: 0.8em;"><sup>6</sup>University of Illinois Urbana-Champaign</span>
+            <span class="author-block" style="margin-right: 0.8em;"><sup>7</sup>Federal University of ABC</span>
+            <span class="author-block" style="margin-right: 0.8em;"><sup>8</sup>KU Leuven</span>
+            <span class="author-block" style="margin-right: 0.8em;"><sup>9</sup>Hasselt University</span>
+            <span class="author-block" style="margin-right: 0.8em;"><sup>10</sup>Emory University</span>
+            <span class="author-block"><sup>11</sup>University of Bristol</span>
+          </div>
+
+          <div class="is-size-6 has-text-centered" style="margin-top: 10px; margin-bottom: 20px;">
+            * Corresponding authors
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- ArXiv Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Data Link. -->
+              <span class="link-block">
+                <a href="https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/TWIKMK"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-database"></i>
+                  </span>
+                  <span>Dataset (UofT Dataverse)</span>
+                </a>
+              </span>
+              <!-- Data Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">🤗</span>
+                  <span>Dataset (HF)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/TaatiTeam/CARE-PD"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="columns is-multiline is-centered">
+  <div class="container is-max-desktop">
+    <div class="column" style="display: flex; flex-direction: column; align-items: center;">
+        <img src="./static/images/image.webp" alt="">
+    </div>
+  </div>
+</div>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p style="font-size: 1.2em;">
+            Objective gait assessment in Parkinson’s Disease (PD) is limited by the absence of large, diverse, and clinically annotated motion datasets. We introduce CARE-PD, the largest publicly available archive of 3D mesh gait data for PD, and the first multi-site collection spanning 9 cohorts from 8 clinical centers. All recordings (RGB video or motion capture) are converted into anonymized SMPL meshes via a harmonized preprocessing pipeline.
+CARE-PD supports two key benchmarks: supervised clinical score prediction (estimating Unified Parkinson’s Disease Rating Scale, UPDRS, gait scores) and unsupervised motion pretext tasks (2D-to-3D keypoint lifting and full-body 3D reconstruction). Clinical prediction is evaluated under four generalization protocols: within-dataset, cross-dataset, leave-one-dataset-out, and multi-dataset in-domain adaptation.
+To assess clinical relevance, we compare state-of-the-art motion encoders with a traditional gait-feature baseline, finding that encoders consistently outperform handcrafted features. Pretraining on CARE-PDreduces MPJPE (from 60.8 mm to 7.5 mm) and boosts PD severity macro-F1 by 17 percentage points, underscoring the value of clinically curated, diverse training data. CARE-PD and all benchmark code are released for non-commercial research.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered has-text-left">
+          <div class="column is-four-fifths" >
+            <h2 class="title is-2" style="margin-bottom: 1em; margin-top: 0.5em;"><span class="carepd">Care-PD</span> Dataset Overview</h2>
+            <div class="columns is-centered">
+              <div class="column is-four-fifths">
+                <img src="./static/images/Table.png" style="max-width: 100%; height: auto;">
+                <div class="content has-text-justified">
+                  <p style="font-size: 1.2em;"><strong>Dataset composition and statistics.</strong> The table presents a comprehensive overview of the CARE-PD dataset, showing the distribution of participants, recording sessions, and clinical assessments across the 9 contributing cohorts from 8 international clinical centers. Each cohort's contribution includes detailed demographics, UPDRS scores, and gait recording specifications.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+        <div class="columns is-centered has-text-left">
+          <div class="column is-four-fifths">
+            <h2 class="title is-2" style="margin-bottom: 1em; margin-top: 1em;">Benchmark Overview</h2>
+            <img src="./static/images/benchmark.png" style="max-width: 100%; height: auto;">
+            <div class="content has-text-justified">
+              <p style="font-size: 1.2em;"><strong>Overview of CARE-PD preprocessing and experimental design.</strong> Left: Unified pipeline for extracting SMPL gait meshes from MoCap and video data, followed by model-specific formatting. Right: Benchmarking setup across two pipelines (representation learning vs. gait features), pretext tasks, and four evaluation protocols.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-left">
+      <div class="column">
+        <h2 class="title is-3">News </h2>
+        <div class="content">
+          <ul style="font-size: 1.1em; line-height: 1.6;">
+            <li style="margin-bottom: 1em;">
+              <strong> Stay tuned for the CARE-PD Benchmark and Challenge!</strong> An upcoming workshop featuring gait analysis, clinical score prediction, and motion synthesis tasks using the CARE-PD dataset. Venue and dates to be announced soon.
+            </li>
+            <li style="margin-bottom: 1em;">
+              <strong>CARE-PD got accepted at NeurIPS 2025! 🎉 </strong> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="terms-of-use">
+  <div class="container is-max-desktop content">
+    <h2 class="title">License & Terms</h2>
+    <div class="content">
+      <p style="font-size: 1.1em; margin-bottom: 1em;">
+        This dataset is licensed under a <strong>Creative Commons 
+        Attribution–NonCommercial–NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)</strong>.
+        It may be used for non-commercial research and educational purposes with appropriate citation but may not be modified or redistributed in altered form 
+        (<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Read the full license</a>).
+      </p>
+
+      <p style="font-size: 1.1em; margin-top: 1em;">
+        By using this dataset, you agree to comply with our terms and conditions. 
+        <a href="terms-of-use.html" style="color: #3273dc; text-decoration: underline;">
+          Read full terms →
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content" style="margin-bottom: 4em;">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{adeli2025carepd,
+title={CARE-PD: A Multi-Site Anonymized Clinical Dataset for Parkinson’s Disease Gait Assessment},
+author={Vida Adeli, Ivan Klabu\v{c}ar, Javad Rajabi, Benjamin Filtjens, Soroush Mehraban, Diwei Wang, Hyewon Seo, Trung-Hieu Hoang, Minh N. Do, Candice Muller, Claudia Neves de Oliveira, Daniel Boari Coelho, Pieter Ginis, Moran Gilat, Alice Nieuwboer, Joke Spildooren, J. Lucas McKay, Hyeokhyen Kwon, Gari Clifford, Christine D. Esper, Stewart A. Factor, Imari Genias, Amirhossein Dadashzadeh, Leia Shum, Alan Whone, Majid Mirmehdi, Andrea Iaboni, Babak Taati},
+booktitle={NeurIPS},
+year={2025}
+}</code></pre>
+
+    <h3 class="title is-4" style="margin-top: 0.9em;">📚 Citation Requirements</h3>
+      <p style="font-size: 1.1em;">
+        If you use the CARE-PD dataset, please cite our paper and all applicable original dataset papers when using the corresponding cohorts.
+      </p>
+
+      <div class="box" style="background-color: #f8f9fa; border-left: 4px solid #ffdd57; padding: 1.5em; margin-top: 1em;">
+        <p style="font-size: 1em; margin-bottom: 1em;">
+          <strong>Important:</strong> Each cohort in CARE-PD comes from original research studies. 
+          Please ensure you cite all relevant original papers to give proper credit to the data contributors.
+        </p>
+        <p style="font-size: 1em;">
+          <strong>Complete list of citations:</strong> 
+          <a href="citations.html" style="color: #3273dc; text-decoration: underline;">
+            View all original dataset citations →
+          </a>
+        </p>
+      </div>
+
+  </div>
+</section>
+
+
+
+<!-- <section class="section" id="original-citations">
+  <div class="container is-max-desktop content">
+    <h2 class="title">📖 Original Dataset Citations</h2>
+    <div class="content">
+      <p style="font-size: 1.1em; margin-bottom: 2em;">
+        The <span class="carepd">Care-PD</span> dataset integrates data from the following original studies. 
+        <strong>Please cite all applicable papers</strong> when using the corresponding cohorts:
+      </p>
+      
+      <div class="box" style="padding: 1.5em;">
+        <p style="font-size: 0.9em; color: #666; margin-bottom: 1em;">
+          <em>This section will be updated with the complete list of original dataset citations from all 8 clinical centers and 9 cohorts.</em>
+        </p>
+        <ul style="font-size: 1em; line-height: 1.6;">
+          <li style="margin-bottom: 1em;">
+            <strong>Cohort 1 - [Institution Name]:</strong> [Citation details to be added]
+          </li>
+          <li style="margin-bottom: 1em;">
+            <strong>Cohort 2 - [Institution Name]:</strong> [Citation details to be added]
+          </li>
+          <li style="margin-bottom: 1em;">
+            <strong>... [Additional cohorts]</strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <!-- Logos Section -->
+    <div class="columns is-centered" style="margin-bottom: 3em;">
+      <div class="column is-10 has-text-centered">
+        <!-- <h4 class="title is-5" style="margin-bottom: 2em; color: #666;">Contributing Institutions</h4> -->
+        <!-- First Row: Main Partners (UofT, Vector, KITE, Bristol) -->
+        <div class="columns is-centered is-vcentered" style="margin-bottom: 1em;">
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/logos/University_of_Toronto-Logo.png" alt="University of Toronto" style="max-height: 65px; width: auto;">
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/logos/Vector-Institute_Logo.png" alt="Vector Institute" style="max-height: 55px; width: auto;">
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/logos/KITE.png" alt="KITE Research Institute" style="max-height: 45px; width: auto;">
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/logos/university-of-bristol.png" alt="University of Bristol" style="max-height: 45px; width: auto;">
+          </div>
+        </div>
+        
+        <!-- Second Row: International Partners -->
+        <div class="columns is-centered is-vcentered" style="margin-bottom: 2em;">
+          <div class="column is-2 has-text-centered">
+            <img src="./static/images/logos/emory-university.png" alt="Emory University" style="max-height: 45px; width: auto;">
+          </div>
+          <div class="column is-2 has-text-centered">
+            <img src="./static/images/logos/University_of_Illinois_at_Urbana-Champaign.png" alt="University of Illinois Urbana-Champaign" style="max-height: 45px; width: auto;">
+          </div>
+          <div class="column is-2 has-text-centered">
+            <img src="./static/images/logos/uhasselt-liggend.jpg" alt="Hasselt University" style="max-height: 45px; width: auto;">
+          </div>
+          <div class="column is-2 has-text-centered">
+            <img src="./static/images/logos/KU_Leuven_logo.png" alt="KU Leuven" style="max-height: 45px; width: auto;">
+          </div>
+          <div class="column is-1 has-text-centered">
+            <img src="./static/images/logos/Logo_CHU_Strasbourg.png" alt="CHU Strasbourg" style="max-height: 75px; width: auto;">
+          </div>
+          <div class="column is-1 has-text-centered">
+            <img src="./static/images/logos/Ufabc_logo.png" alt="Federal University of ABC" style="max-height: 45px; width: auto;">
+          </div>
+        </div>
+        
+        <!-- Third Row: Square/Portrait and Medium Logos -->
+        <!-- <div class="columns is-centered is-vcentered">
+          
+        </div>
+      </div>
+    </div> -->
+    
+    <!-- License Section -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a> and is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">this page</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="center-div">
+  <a href=""  title="Visit tracker"><img src="" /></a>
+</div>
+
+</body>
+</html>
