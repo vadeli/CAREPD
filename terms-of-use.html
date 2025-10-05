@@ -26,6 +26,18 @@
     .carepd span {
       font-variant: normal; /* keep STYLE in normal uppercase */
     }
+    .back-button {
+      background-color: #dbdbdb !important;
+      color: #363636 !important;
+      border-color: #dbdbdb !important;
+      transition: all 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #3273dc !important;
+      color: white !important;
+      border-color: #3273dc !important;
+      transform: translateY(-1px);
+    }
   </style>
 </head>
 <body>
@@ -35,8 +47,8 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1" style="font-size: 3rem; margin-bottom: 1em;">
-            📜 Terms of Use
+          <h1 class="title is-2 publication-title carepd" style="font-size: 3rem; margin-bottom: 1em;">
+            Terms of Use
           </h1>
           <h2 class="subtitle is-4">
             <h1 class="title is-1 publication-title carepd" style="font-size: 2rem; margin-top: 0.2em;">
@@ -45,19 +57,20 @@
           </h2>
         </div>
       </div>
-    </di
-    v>
+    </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="container is-max-desktop content">
-    <div class="content">
+  <div class="container">
+    <div class="columns is-centered has-text-left">
+      <div class="column is-four-fifths" >
       <p style="font-size: 1.2em; margin-bottom: 2em;">
+        By downloading and/or using the Data & Code (including downloading, cloning, installing, and any other use of the corresponding code repository), you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the Data & Software. Any infringement of the terms of this agreement will automatically terminate your rights under this License.
         By accessing and using this database (the "Database"), users ("Users") acknowledge and agree to comply with the following conditions:
       </p>
 
-      <h2 class="title is-3">🏷️ License and Attribution</h2>
+      <h2 class="title is-5">🏷️ License and Attribution</h2>
       <ul style="font-size: 1.1em; line-height: 1.6; margin-bottom: 2em;">
         <li style="margin-bottom: 0.8em;">
           The
@@ -68,7 +81,7 @@
         </li>
       </ul>
 
-      <h2 class="title is-3">🔒 Data Privacy and Ethics</h2>
+      <h2 class="title is-5">🔒 Data Privacy and Ethics</h2>
       <ul style="font-size: 1.1em; line-height: 1.6; margin-bottom: 2em;">
         <li style="margin-bottom: 0.8em;">
           Users must not attempt to identify, contact, or otherwise compromise the anonymity of any individuals whose data is included in the Database.
@@ -78,7 +91,7 @@
         </li>
       </ul>
 
-      <h2 class="title is-3">🛡️ Data Handling and Security</h2>
+      <h2 class="title is-5">🛡️ Data Handling and Security</h2>
       <ul style="font-size: 1.1em; line-height: 1.6; margin-bottom: 2em;">
         <li style="margin-bottom: 0.8em;">
           Users must maintain appropriate data security measures to prevent unauthorized access, sharing, or use of the data.
@@ -88,19 +101,43 @@
         </li>
       </ul>
 
-      <h2 class="title is-3">⚖️ Intellectual Property Notice</h2>
+      <h2 class="title is-5">⚖️ Intellectual Property Notice</h2>
       <ul style="font-size: 1.1em; line-height: 1.6; margin-bottom: 2em;">
         <li style="margin-bottom: 0.8em;">
           Copyright and other rights remain with the original data providers.
         </li>
       </ul>
 
-      <h2 class="title is-3">⚠️ Disclaimer of Warranty</h2>
+      <h2 class="title is-5">⚠️ Disclaimer of Warranty</h2>
       <ul style="font-size: 1.1em; line-height: 1.6; margin-bottom: 2em;">
         <li style="margin-bottom: 0.8em;">
           Use of the Database is subject to Section 5 (Disclaimer of Warranties and Limitation of Liability) of the CC BY-NC-ND 4.0 licence.
         </li>
+        <p style="margin-bottom: 0.8em;">
+          You expressly acknowledge and agree that the Data & Software results from basic research, is provided "AS IS", may contain errors, and that any use of the Data is at your sole risk.
+        </p>
       </ul>
+      <h2 class="title is-5">📖 Publications using the Data and/or Benchmark</h2>
+      <div style="font-size: 1.1em; line-height: 1.6; margin-bottom: 2em;">
+        <p style="margin-bottom: 0.8em;">
+          You acknowledge that the Data & Software is a valuable scientific resource and agree to appropriately reference the following paper in any publication making use of the Data & Software.
+        </p>
+        <div class="box" style="background-color: #f8f9fa; border-left: 4px solid #ffdd57; padding: 1.5em; margin-top: 1em;">
+          <p style="font-size: 1em; margin-bottom: 1em;">
+            <strong>Required Citation:</strong>
+          </p>
+          <pre style="background-color: #ffffff; padding: 1em; border: 1px solid #ddd; border-radius: 4px; font-size: 0.9em;"><code>@inproceedings{adeli2025carepd,
+title={CARE-PD: A Multi-Site Anonymized Clinical Dataset for Parkinson's Disease Gait Assessment},
+author={Vida Adeli, Ivan Klabu\v{c}ar, Javad Rajabi, Benjamin Filtjens, Soroush Mehraban, Diwei Wang, Hyewon Seo, Trung-Hieu Hoang, Minh N. Do, Candice Muller, Claudia Neves de Oliveira, Daniel Boari Coelho, Pieter Ginis, Moran Gilat, Alice Nieuwboer, Joke Spildooren, J. Lucas McKay, Hyeokhyen Kwon, Gari Clifford, Christine D. Esper, Stewart A. Factor, Imari Genias, Amirhossein Dadashzadeh, Leia Shum, Alan Whone, Majid Mirmehdi, Andrea Iaboni, Babak Taati},
+booktitle={NeurIPS},
+year={2025}
+}</code></pre>
+          <p style="font-size: 0.9em; color: #666; margin-top: 1em;">
+            Additionally, please cite all applicable original dataset papers when using specific cohorts. 
+            <a href="citations.html" style="color: #3273dc; text-decoration: underline;">View complete citation list →</a>
+          </p>
+        </div>
+      </div>
 
       <div class="box" style="background-color: #f0f8ff; border-left: 4px solid #3273dc; padding: 2em; margin-top: 3em;">
         <h3 class="title is-4" style="margin-bottom: 1em;">📋 Agreement</h3>
@@ -110,7 +147,7 @@
       </div>
 
       <div class="has-text-centered" style="margin-top: 3em;">
-        <a href="index.html" class="button is-primary is-large">
+        <a href="index.html" class="button is-light back-button is-large">
           ← Back to CARE-PD Dataset
         </a>
       </div>
@@ -132,7 +169,13 @@
       </div>
     </div>
   </div>
+
 </footer>
 
 </body>
 </html>
+
+
+
+
+
