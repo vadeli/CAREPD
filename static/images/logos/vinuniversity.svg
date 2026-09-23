@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 116" role="img" aria-label="VinUniversity">
-  <path fill="#d9234e" d="M108 9h17l-10 23z"/>
-  <path fill="#243f71" d="M62 24h30l27 35 26-35h31l-57 65z"/>
-  <path fill="#38618e" d="m62 24 57 65-21-8-50-57z"/>
-  <path fill="#183754" d="m176 24-57 65 21-8 50-57z"/>
-  <text x="120" y="109" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700"><tspan fill="#ca2944">VIN</tspan><tspan fill="#252a30">UNIVERSITY</tspan></text>
-</svg>
